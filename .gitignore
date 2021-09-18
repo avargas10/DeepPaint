@@ -21,7 +21,7 @@ sdist/
 var/
 outputs/
 images/
-Results/Test_01_MSE_BASE/outputs
+Results/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
