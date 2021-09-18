@@ -7,7 +7,7 @@ class ColorizationNet(nn.Module):
     MIDLEVEL_FEATURE_SIZE = 128
 
     ## First half: ResNet
-    resnet = models.resnet18(num_classes=313) 
+    resnet = models.resnet18(num_classes=365) 
     # Change first conv layer to accept single-channel (grayscale) input
     resnet.conv1.weight = nn.Parameter(resnet.conv1.weight.sum(dim=1).unsqueeze(1)) 
     # Extract midlevel features from ResNet-gray
